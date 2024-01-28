@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+
+
+.container{
+    width: 100%;
+    height:100%;
+
+}
+
+header .top{
+    height:5%;
+    width: 100%;
+    background-color: rgb(22, 1, 79);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+
+}
+.details span{
+    font-size: 1rem;
+    color: white;
+}
+
+.top .details{
+    display: flex;
+ 
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    padding: 2px;
+    flex: 0.46;
+    
+}
+.details p{
+    font-size: 1rem;
+    color: white;
+    padding-left: 3px;
+ 
+  
+}
+
+
+.details i{
+    color: black;
+    background: green;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.right{
+    /* flex: ; */
+
+    
+}
+
+.right .right_details ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+.right_details ul{
+   
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+ul li{
+    color: white;
+    font-size: 0.5rem;
+    padding-left: 4px;
+  
+}
+
+ul li i{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    
+}
+
+.bottom{
+    height:4.5%;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.bottom .bottom_left{
+    display: flex;
+    flex: 2;
+
+}
+
+.bottom .bottom_left i{
+    color:rgb(0, 0, 56);
+    font-size: 30px;
+    margin-left: 1rem;
+
+}
+
+.bottom .bottom_right{
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+}
+
+.bottom .bottom_right ul{
+
+    display: flex;
+    /* width: 60%; */
+    /* flex: 5; */
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.bottom .bottom_right ul li{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: rgb(0, 0, 56);
+
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+
+}
+
+.container .banner{
+   
+    background: url("https://assets.devx.work/images/external/blog/corporate_office_building/dfl_epitome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50%;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 6rem;
+   position: relative;
+   
+} 
+
+.banner .banner_left{
+    max-width: 35%;
+    height:35%;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    z-index: 2;
+    animation : moving 1s ease-in-out;
+}
+
+@keyframes moving{
+    0%{
+        margin-top:-20%;
+        opacity: 0.5;
+    }
+    100%{
+        margin-top:20%;
+        opacity: 1;
+    }
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index: 1;
+    background-color: rgba(1, 2, 66, 0.545);
+
+}
+.banner .banner_left h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* line-height:20px; */
+    color: white;
+    text-align: left;
+
+}
+
+.banner .banner_left h4{
+    font-size: 15px;
+   
+    color: white;
+    text-align: left;
+    font-weight: 300;
+
+}
+
+.banner .banner_btn{
+
+     width:25%;
+   padding: 5px 15px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.banner .banner_right{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 20px;
+    z-index: 2;
+    /* height:25%; */
+    width: 25%;
+    animation: formScroll 1s ease-in-out;
+    position: relative;
+    
+}
+.banner_right form {
+    height: 25%;
+   
+}
+
+@keyframes formScroll{
+
+    from{
+        position: absolute;
+        right:-40%;
+        opacity: 0.5;
+    }
+
+    to{
+        position: absolute;
+        right: 15%;
+        opacity: 1;
+    }
+
+}
+
+
+
+
+.banner_right form h2{
+
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+
+
+}
+
+.banner_right form>div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    margin-top: 0.9rem;
+}
+
+.banner_right form>label{
+    font-size: 0.5rem;
+    text-align: left;
+    font-weight: 300;
+}
+
+.banner_right input{
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.475);
+    padding: 5px 10px;
+}
+
+.banner_right .check{
+display: flex;
+width: 100%;
+flex-direction: row;
+/* justify-content: space-between; */
+}
+
+.banner_right .check .disc{
+    max-width: 75%;
+    font-size: 0.9rem;
+
+padding-left: 5px;
+}
+
+.banner_right .check a{
+    color: blue;
+}
+.banner_right button{
+   background-color: rgb(0, 0, 62);
+   color: white;
+   font-weight: 300;
+   font-size: 12px;
+   padding: 7px 18px;
+   border-radius: 20px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   margin-left: 0.2rem;
+   margin-top: 5%;
+
+}
+
+.banner_right button i{
+    margin-left: 2px;
+}
+
+.footer{
+    width: 100%;
+    height:50%;
+    background-color: #F0F9F9;
+}
+
+.footer .card{
+    width: 100%;
+    height: 300px;
+    background-color: #F0F9F9;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.card .card_details{
+    animation: swipe 1s ease-in-out;
+    position: relative;
+}
+
+@keyframes swipe{
+    0%{
+       position: absolute;
+       top:-200px;
+       opacity: 0.5;
+    }
+
+    100%{
+        position: absolute;
+        top:200px;
+        opacity: 1;
+    }
+}
+
+.card_details .image{
+    height:40px;
+    width:40px;
+    background-color: #40A5A2;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card_details .image img{
+    height: 19px;
+    width: 19px;
+
+}
+
+
+/* media Queries */
+
+@media (max-width:566){
+    .top{
+        width: 100%;
+    }
+    .top .details{
+        flex: 0.5;
+        width: 60%;
+    }
+
+    .container .banner{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .banner .banner_left{
+        height: 50%;
+    }
+    .banner .banner_right{
+        height: 50%;
+    }
+}
